@@ -10,10 +10,10 @@ You can obtain CmTomlMode via npm:
 npm install @sgarciac/cm_toml_mode
 ```
 
-of simply copy
+of simply copying 
 [dist/cm-toml-mode.js](https://raw.githubusercontent.com/sgarciac/cm-toml-mode/master/dist/cm-toml-mode.js)
 
-and writing something like this in your HTML:
+ ... and writing something like this in your HTML:
 
 ```html
 <link rel=stylesheet href="codemirror.css">
@@ -21,8 +21,34 @@ and writing something like this in your HTML:
 <script src="cm-toml-mode.js"></script>
 <script>
 
-  CodeMirror.defineMode("sergiomode", CmTomlMode.tomlMode);
+  CodeMirror.defineMode("bettertomlmode", CmTomlMode.tomlMode);
 </script>
+
+<style>
+  .CodeMirror { height: auto; border: 1px solid #ddd; }
+  .CodeMirror-scroll { max-height: 200px; }
+  .CodeMirror pre { padding-left: 7px; line-height: 1.25; }
+</style>
+
+<form style="position: relative; margin-top: .5em;">
+  <textarea id="demotext">
+</textarea>
+</form>
+<script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("demotext"), {
+      lineNumbers: true,
+      mode: "bettertomlmode",
+      matchBrackets: true
+    });
+</script>
+
+
+```
+
+...
+
+```
+
 ```
 
 You can see this mode in action (here)[https://sgarciac.github.io/cm-toml-mode/]
