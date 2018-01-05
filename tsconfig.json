@@ -3,7 +3,7 @@
     "target": "es5",
     "module": "commonjs",
     "watch": false,
-    "outDir": "lib"
+    "outDir": "js"
   },
   "include": [
     "src"
