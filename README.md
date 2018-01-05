@@ -42,15 +42,8 @@ of simply copying
     });
 </script>
 
-
 ```
 
-...
-
-```
-
-```
-
-You can see this mode in action (here)[https://sgarciac.github.io/cm-toml-mode/]
+You can see this mode in action [here](https://sgarciac.github.io/cm-toml-mode/)
 
 
