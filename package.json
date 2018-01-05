@@ -1,0 +1,19 @@
+{
+  "name": "@sgarciac/cm_toml_mode",
+  "version": "1.0.0",
+  "description": "A better codemirror toml mode",
+  "main": "lib/cm_toml_mode",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codemirror": "^5.29.0"
+  },
+  "devDependencies": {
+    "@types/codemirror": "0.0.53",
+    "typescript": "^2.6.2",
+    "webpack": "^3.6.0"
+  }
+}
