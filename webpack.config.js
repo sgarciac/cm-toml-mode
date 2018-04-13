@@ -3,13 +3,13 @@ var webpack = require('webpack'),
 
 var webConfig = {
   target: "web",
-  context: path.resolve(__dirname, "js"),
+  context: path.resolve(__dirname, "dist"),
   entry: [
     './cm-toml-mode.js'
   ],
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'cm-toml-mode.js',
+    filename: 'cm-toml-mode.web.js',
     library: 'CmTomlMode'
   },
   resolve: {
@@ -18,21 +18,4 @@ var webConfig = {
   }
 };
 
-var nodeConfig = {
-  target: "node",
-  context: path.resolve(__dirname, "js"),
-  entry: [
-    './cm-toml-mode.js'
-  ],
-  output: {
-    path: path.join(__dirname, '/dist'),
-    filename: 'cm-toml-mode.node.js'
-  },
-  resolve: {
-    modules: [path.resolve(__dirname, "node_modules")],
-    extensions: [ '.js' ]
-  }
-};
-
-
-module.exports = [webConfig, nodeConfig];
+module.exports = [webConfig];
