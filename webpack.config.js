@@ -1,8 +1,8 @@
 var webpack = require('webpack'),
     path = require('path');
 
-
-var config = {
+var webConfig = {
+  target: "web",
   context: path.resolve(__dirname, "js"),
   entry: [
     './cm-toml-mode.js'
@@ -18,4 +18,21 @@ var config = {
   }
 };
 
-module.exports = config;
+var nodeConfig = {
+  target: "node",
+  context: path.resolve(__dirname, "js"),
+  entry: [
+    './cm-toml-mode.js'
+  ],
+  output: {
+    path: path.join(__dirname, '/dist'),
+    filename: 'cm-toml-mode.node.js'
+  },
+  resolve: {
+    modules: [path.resolve(__dirname, "node_modules")],
+    extensions: [ '.js' ]
+  }
+};
+
+
+module.exports = [webConfig, nodeConfig];

@@ -1,11 +1,12 @@
 {
   "name": "@sgarciac/cm_toml_mode",
-  "version": "1.0.11",
+  "version": "1.0.13",
   "description": "A better codemirror toml mode",
-  "main": "./dist/cm-toml-mode.js",
+  "main": "dist/cm-toml-mode.node.js",
+  "types": "dist/cm-toml-mode.d.ts",
   "scripts": {
-    "pack": "webpack",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "pack" : "webpack"
   },
   "author": "",
   "license": "ISC",

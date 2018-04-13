@@ -4,19 +4,19 @@ var NewLine;
 (function (NewLine) {
     NewLine[NewLine["ERROR"] = 0] = "ERROR";
     NewLine[NewLine["POP"] = 1] = "POP";
-})(NewLine || (NewLine = {}));
+})(NewLine = exports.NewLine || (exports.NewLine = {}));
 ;
 var Space;
 (function (Space) {
     Space[Space["SKIP"] = 0] = "SKIP";
     Space[Space["ONLY_CLOSING_LINE"] = 1] = "ONLY_CLOSING_LINE";
-})(Space || (Space = {}));
+})(Space = exports.Space || (exports.Space = {}));
 ;
 var PopMode;
 (function (PopMode) {
     PopMode[PopMode["CONSUME_TOKEN"] = 0] = "CONSUME_TOKEN";
     PopMode[PopMode["LEAVE_TOKEN"] = 1] = "LEAVE_TOKEN";
-})(PopMode || (PopMode = {}));
+})(PopMode = exports.PopMode || (exports.PopMode = {}));
 function makeStates(states) {
     return states;
 }
