@@ -27,8 +27,8 @@ export interface CmTomlState {
     lexer_states_stack: LexerState[],
     currentMatcher: () => Matcher,
     popMatcher: () => Matcher,
-    pushMatcher: (Matcher) => number,
-    readNext: (stream) => string
+    pushMatcher: (m: any) => number,
+    readNext: (s: any) => string
 }
 
 export interface LexerState {
