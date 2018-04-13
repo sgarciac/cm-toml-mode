@@ -1,6 +1,6 @@
 {
   "name": "@sgarciac/cm_toml_mode",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "A better codemirror toml mode",
   "main": "dist/cm-toml-mode.node.js",
   "types": "dist/cm-toml-mode.d.ts",
