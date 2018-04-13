@@ -18,7 +18,7 @@ of simply copying
 ```html
 <link rel=stylesheet href="codemirror.css">
 <script src="codemirror.js"></script>
-<script src="cm-toml-mode.js"></script>
+<script src="cm-toml-mode.web.js"></script>
 <script>
 
   CodeMirror.defineMode("bettertomlmode", CmTomlMode.tomlMode);
