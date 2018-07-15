@@ -1,7 +1,7 @@
 # CmTomlMode
 
 A better TOML mode for Codemirror. The current mode offered by codemirror lacks
-support for some features of TOML version 4.0 such as datetimes and inline
+support for some features of TOML version 0.4 such as datetimes and inline
 tables but also fails to correctly colour some of the more basic types.
 
 You can obtain CmTomlMode via npm:
