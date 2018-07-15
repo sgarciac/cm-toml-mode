@@ -6,7 +6,7 @@
   "types": "dist/cm-toml-mode.d.ts",
   "scripts": {
     "build": "tsc -p .",
-    "pack" : "webpack"
+    "pack": "webpack"
   },
   "author": "",
   "license": "ISC",
