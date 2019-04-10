@@ -11,7 +11,7 @@ npm install @sgarciac/cm_toml_mode
 ```
 
 of simply copying 
-[dist/cm-toml-mode.js](https://raw.githubusercontent.com/sgarciac/cm-toml-mode/master/dist/cm-toml-mode.js)
+[dist/cm-toml-mode.js](https://raw.githubusercontent.com/sgarciac/cm-toml-mode/master/dist/cm-toml-mode.web.js)
 
  ... and writing something like this in your HTML:
 
